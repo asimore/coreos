@@ -1,4 +1,4 @@
-# cloud-config
+#cloud-config
 hostname: plat-sea-app3
 # set ssh key
 ssh_authorized_keys:
