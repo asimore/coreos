@@ -1,9 +1,8 @@
 #cloud-config
+
+coreos: 
+  discovery: "https://discovery.etcd.io/520823a6b4297616c5062f3c1965c16d"
+  etcd: ~
 hostname: plat-sea-app3
-# set ssh key
-ssh_authorized_keys:
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDskJaZiLdTgd2eqvi6Fs47WzVoBgpp4/pYRg0F8lIeAaW/Muffnvkwm1pVCp2rEqJnjV2Ob19HEgAUBlngT0OLWlPPVqXapz5AwSPh1AWyBSJi5xFvsCvQhKYVZz/q5vhgpOqFfvMAhdjPl8MtE3FVBlPlBVP9GLQi13L5H5Z03eYAvGjn9I5W1RzyZtzPhc/qWCuTW9AWyAIpns9GUvUQlcoqVVcIGeTg6b4j8UZYoAYJbVpB8vc3tkcYRpz9fCsq5g/FuHEZ8w2n0OQWU+e0/L9KgG3NCp7QsR8oz9rqjib2I6Mx/iegaQREnHKZaP6hnxb5mpZUNQJT51vutW5X asim@platalytics.com
-coreos:
-  etcd:
-  # generate a new token for each unique cluster from https://discovery.etcd.io/new
-  discovery: https://discovery.etcd.io/520823a6b4297616c5062f3c1965c16d
+ssh_authorized_keys: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDskJaZiLdTgd2eqvi6Fs47WzVoBgpp4/pYRg0F8lIeAaW/Muffnvkwm1pVCp2rEqJnjV2Ob19HEgAUBlngT0OLWlPPVqXapz5AwSPh1AWyBSJi5xFvsCvQh$"
+
